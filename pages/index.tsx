@@ -1,13 +1,21 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
+
+/* import { Inter } from '@next/font/google'
+import { Layout } from '../src/components/Layout'
 
 const inter = Inter({ subsets: ['latin'] })
- 
-export default function Home() {
-  return (
-    <>
-     <h1>hola</h1>
-    </>
-  )
+  */
+
+import React from 'react'
+import type { NextPageWithLayout } from '../pages/_app'
+import VerifyPatientApp from '../src/components/VerifyPatient'
+import { VerifyPatientLayout } from '../src/components/Layout'
+
+const HomePage: NextPageWithLayout = () => {
+  return <VerifyPatientApp />
 }
+
+HomePage.getLayout = page => (
+    <VerifyPatientLayout>{page}</VerifyPatientLayout>
+)
+export default HomePage
+
