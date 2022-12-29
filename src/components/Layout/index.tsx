@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { Card, Box } from '@mui/material'
 import FooterApp from '../Footer'
 import VerifyPatientApp from '../VerifyPatient'
+import HeaderApp from '../Header'
 
 interface Props {
   children?: ReactNode
@@ -14,6 +15,9 @@ export const VerifyPatientLayout: FC<Props> = props => {
 
   return (
     <>
+    <Box>
+      <HeaderApp />
+    </Box>
       <Box
         sx={{
           display: 'flex',
