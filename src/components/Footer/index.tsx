@@ -36,18 +36,22 @@ export default function FooterApp() {
         justifyContent="center"
         gap={2}
         xs={6}
-        md={3}
+        md={12}
         lg={3}
         sx={{ background: '#009999' }}
       >
-        <Box>
-          <Image
-            src="/img/logo-redsalud-footer.svg"
-            alt="logo-red-salud"
-            width={194}
-            height={52}
-          />
-        </Box>
+        <Grid container>
+          <Grid item xs >
+            <Box paddingLeft={4}>
+              <Image
+                src="/img/logo-redsalud-footer.svg"
+                alt="logo-red-salud"
+                width={194}
+                height={52}
+              />
+            </Box>
+          </Grid>
+        </Grid>
       </Grid>
     </Grid>
   )

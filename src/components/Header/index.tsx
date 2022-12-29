@@ -77,7 +77,7 @@ const HeaderApp: FC<Props> = props => {
       </Stack>
       <Stack
         direction="row"
-        justifyContent="space-between"
+        justifyContent="center"
         sx={{
           height: '100%',
           maxHeight: {
