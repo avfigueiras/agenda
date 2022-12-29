@@ -1,9 +1,9 @@
 import React from 'react'
 import type { FC, ReactNode } from 'react'
 import PropTypes from 'prop-types'
-import { Card, Box } from '@mui/material'
+import { Card, Box, Typography } from '@mui/material'
 import FooterApp from '../Footer'
-import VerifyPatientApp from '../VerifyPatient'
+import HeaderApp from '../Header'
 
 interface Props {
   children?: ReactNode
@@ -18,13 +18,32 @@ export const VerifyPatientLayout: FC<Props> = props => {
         sx={{
           display: 'flex',
           flexDirection: 'column',
+          textAlign:'center',
+        }}
+      >
+        <HeaderApp type="default"/>
+        <Typography fontWeight={800} fontSize={24} color="#01635e">
+          Reserva de hora
+        </Typography>
+        <Typography
+          fontWeight={400}
+          fontSize={14}
+          color="#0F0F0F"
+        >
+          Paso 1: Identificar paciente
+        </Typography>
+      
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
           minHeight: '100vh'
         }}
       >
         <Box
           component="main"
-          sx={{ my: { md: 8, xs: 0 }, mx: 'auto' }}
-          maxWidth="sm"
+          sx={{ my: { md: 8, xs: 0 }, mx: 'auto', }}
+          maxWidth="md"
         >
           <Card
             variant="outlined"
@@ -48,6 +67,7 @@ export const VerifyPatientLayout: FC<Props> = props => {
         >
           <FooterApp />
         </Box>
+      </Box>
       </Box>
     </>
   )
