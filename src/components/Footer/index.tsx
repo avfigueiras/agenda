@@ -35,9 +35,9 @@ export default function FooterApp() {
         alignContent="center"
         justifyContent="center"
         gap={2}
-        xs={6}
+        xs={12}
         md={12}
-        lg={3}
+        lg={12}
         sx={{ background: '#009999' }}
       >
         <Grid container>
