@@ -27,7 +27,7 @@ const steps = [
 
 const QontoConnector = styled(StepConnector)(() => ({
   [`&.${stepConnectorClasses.alternativeLabel}`]: {
-    top: 10,
+    top: 10, //si pongo -34 sube a la linea de la card
     left: 'calc(-52% + 15px)',
     right: 'calc(46% + 16px)'
   },
@@ -98,7 +98,7 @@ interface Props {
 export default function StepperApp(props: Props) {
   const { actualStep } = props
   return (
-    <Box sx={{ width: '100%' }}>
+    <Box sx={{ width: '100%' }} >
       <Stepper
         activeStep={actualStep}
         alternativeLabel

@@ -30,7 +30,7 @@ const HeaderApp: FC<Props> = props => {
   return (
     <Stack
       direction="row"
-      justifyContent="space-between"
+      justifyContent="center"
       sx={{
         height: '100%',
         maxHeight: {
@@ -74,14 +74,14 @@ const HeaderApp: FC<Props> = props => {
           )}
         </Box>
       </Box>
-      {/* <Stack direction="row">
+      <Stack direction="row">
         {type === 'default' && (
           <>
             <Typography
               sx={{
-                color: '#000000',
-                fontWeight: 600,
-                fontSize: 16,
+                color: '#009999',
+                fontWeight: 400,
+                fontSize: 14,
                 paddingTop: {
                   xs: 3,
                   md: 2
@@ -93,11 +93,83 @@ const HeaderApp: FC<Props> = props => {
                 }
               }}
             >
-              María
+              Reserva de hora
+            </Typography>
+            <Typography
+              sx={{
+                color: '#009999',
+                fontWeight: 400,
+                fontSize: 14,
+                paddingTop: {
+                  xs: 3,
+                  md: 2
+                },
+                marginRight: 1,
+                marginLeft: {
+                  xs: 0,
+                  md: 1
+                }
+              }}
+            >
+              Consultar hora
+            </Typography>
+            <Typography
+              sx={{
+                color: '#009999',
+                fontWeight: 400,
+                fontSize: 14,
+                paddingTop: {
+                  xs: 3,
+                  md: 2
+                },
+                marginRight: 1,
+                marginLeft: {
+                  xs: 0,
+                  md: 1
+                }
+              }}
+            >
+              Confirmar hora
+            </Typography>
+            <Typography
+              sx={{
+                color: '#009999',
+                fontWeight: 400,
+                fontSize: 14,
+                paddingTop: {
+                  xs: 3,
+                  md: 2
+                },
+                marginRight: 1,
+                marginLeft: {
+                  xs: 0,
+                  md: 1
+                }
+              }}
+            >
+              Anular hora
+            </Typography>
+            <Typography
+              sx={{
+                color: '#009999',
+                fontWeight: 400,
+                fontSize: 14,
+                paddingTop: {
+                  xs: 3,
+                  md: 2
+                },
+                marginRight: 1,
+                marginLeft: {
+                  xs: 0,
+                  md: 1
+                }
+              }}
+            >
+              Reprogramar hora
             </Typography>
           </>
         )}
-      </Stack> */}
+      </Stack>
     </Stack>
   )
 }
