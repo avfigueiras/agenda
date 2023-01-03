@@ -32,7 +32,34 @@ export default function VerifyPatientApp() {
       color: 'rgba(255,255,255,.5)',
       border: 'none',
       fontSize: '14px',
+      borderRadius: '5px',
+    },
+    label: {
+      letterSpacing: '-.75px',
+      fontWeight: '600',
+      fontFamily: 'Nunito',
+      color: '#747473',
+      fontSize: '14px',
+      maxWidth: '100%',
+      marginBottom: '5px',
+    },
+    textCenter: {
+      textAlign: 'center',
+    },
+    h3: {
+      fontSize: '20px',
+      fontWeight: 'bold',
+      marginTop: '4px',
+      textTransform: 'uppercase',
+      fontFamily: 'Nunito',
+      color: '#099',
+    },
+    p: {
+      color: '#747473',
+      fontWeight: '300',
+      margin: '0 0 10px',
     }
+
   } as const;
   return (
     <>
@@ -55,8 +82,15 @@ export default function VerifyPatientApp() {
           Paso 1: Identificar paciente
         </Typography>
       </Box>
-
+      <div className="textCenter" style={styles.textCenter}>
+        <h3 style={styles.h3}>¿Para quién es la hora?</h3>
+        <div className="textCenter" style={styles.textCenter}>
+          <p style={styles.p}>Complete los datos del <u><strong>Paciente</strong> que será atendido:</u></p>
+        </div>
+      </div>
+      <label style={styles.label}>Documento de Identificación</label>
       <select id="patientInfoDocType" style={styles.select}><option label="Elegir ..." value="">Elegir ...</option><option label="Carnet de Identidad" value="NationalId" selected="selected">Carnet de Identidad</option><option label="Pasaporte" value="Passport">Pasaporte</option></select>
+      <label style={styles.label}>Rut del paciente</label>
       <TextField
         color={'primary'}
         margin="normal"
