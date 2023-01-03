@@ -28,10 +28,19 @@ export const VerifyPatientLayout: FC<Props> = props => {
             flexDirection: 'column',
             textAlign:'start',
             marginTop:'30px',
-            paddingLeft:'330px'
+            paddingLeft:'350px'
           }}
         >
-          <Typography fontWeight={800} fontSize={24} color="#01635e" borderBottom='2px solid'>
+          <Box 
+              sx={{
+            display: 'flex',
+            textAlign:'start',
+            marginTop:'30px',
+            paddingLeft:'500px'
+          }}
+          >
+          </Box>
+          <Typography fontWeight={800} fontSize={24} color="#01635e">
             Reserva de hora
           </Typography>
           <Typography

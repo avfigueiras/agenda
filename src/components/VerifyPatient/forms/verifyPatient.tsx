@@ -110,7 +110,7 @@ const VerifyPatientForm: FC = () => {
   return (
     <form onSubmit={formik.handleSubmit} noValidate style={{width:'100%', paddingTop:'45px'}} >
       <Stack spacing={2} >
-          <Autocomplete
+          {/* <Autocomplete
               freeSolo
               sx={{ mt: 2 }}
               clearIcon={
@@ -156,8 +156,41 @@ const VerifyPatientForm: FC = () => {
                   helperText={documentTypeChange && formik.errors.documentType?.id}
                 />
               )}
-            />
-          <FormControl sx={{ m: 1, minWidth: 120 }}>
+            /> */}
+          <TextField
+          id="outlined-select-currency-native"
+          select
+          label="Tipo de documento"
+          defaultValue="Elegir ..."
+          SelectProps={{
+            native: true,
+          }}
+          helperText="Campo obligatorio"
+          variant="filled"
+        >
+          {documentTypeConst.map((option) => (
+            <option key={option.label} value={option.id}>
+              {option.label}
+            </option>
+          ))}
+        </TextField>
+        <TextField
+          id="outlined-select-currency-native"
+          select
+          label="Tipo de documento"
+          defaultValue="Elegir ..."
+          SelectProps={{
+            native: true,
+          }}
+          helperText="Please select your currency"
+        >
+          {documentTypeConst.map((option) => (
+            <option key={option.label} value={option.id}>
+              {option.label}
+            </option>
+          ))}
+        </TextField>
+         {/*  <FormControl sx={{ m: 1, minWidth: 120 }}>
             <InputLabel >Elegir ...</InputLabel>
             <Select 
             labelId="demo-simple-select-label"
@@ -168,7 +201,7 @@ const VerifyPatientForm: FC = () => {
             {documentTypeConst.map(i =><MenuItem> {i.label}</MenuItem>)}
             </Select>
             <FormHelperText>{documentTypeChange && formik.errors.documentType?.id}</FormHelperText>
-          </FormControl>
+          </FormControl> */}
           <TextField
             color={formik.errors.documentNumber ? 'error' : 'primary'}
             margin="normal"
@@ -198,6 +231,7 @@ const VerifyPatientForm: FC = () => {
               formik.touched.documentNumber && formik.errors.documentNumber
             }
             InputProps={{
+              background:'transparent',
               endAdornment: (
                 <InputAdornment position="end">
                   <IconButton edge="end">
@@ -213,6 +247,7 @@ const VerifyPatientForm: FC = () => {
             disabled={
               formik.isSubmitting ||
               !formik.isValid ||
+              !formik.values.documentNumber ||
               !formik.values.documentNumber
             }
             type="submit"
