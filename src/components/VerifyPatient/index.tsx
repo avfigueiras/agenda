@@ -42,6 +42,7 @@ export default function VerifyPatientApp() {
       fontSize: '14px',
       maxWidth: '100%',
       marginBottom: '5px',
+      display: 'flex',
     },
     textCenter: {
       textAlign: 'center',
@@ -70,17 +71,7 @@ export default function VerifyPatientApp() {
           alignItems: 'center'
         }}
       >
-        <Typography fontWeight={800} fontSize={24} color="#01635e">
-          Reserva de hora
-        </Typography>
-        <Typography
-          fontWeight={400}
-          fontSize={18}
-          color="#0F0F0F"
-          align="center"
-        >
-          Paso 1: Identificar paciente
-        </Typography>
+
       </Box>
       <div className="textCenter" style={styles.textCenter}>
         <h3 style={styles.h3}>¿Para quién es la hora?</h3>
