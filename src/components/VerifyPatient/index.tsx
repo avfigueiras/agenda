@@ -6,6 +6,7 @@ import { Avatar, Box, Typography, Button, IconButton, InputAdornment, TextField 
 import { format } from 'rut.js'
 import { FormikHelpers, useFormik } from 'formik'
 import StepperApp from './components/Stepper'
+import MyComponent from '../keyboard/MyComponent'
 
 /* import SuccessMessageLoginApp from './SuccessMessage'
 import LoginForm from './forms/login' */
@@ -65,7 +66,7 @@ export default function VerifyPatientApp() {
   } as const;
   return (
     <>
-    <StepperApp actualStep={show ? 1 : 0}/>
+      <StepperApp actualStep={show ? 1 : 0} />
       <Box
         sx={{
           display: 'flex',
@@ -84,24 +85,29 @@ export default function VerifyPatientApp() {
       <label style={styles.label}>Documento de Identificación</label>
       <select id="patientInfoDocType" style={styles.select}><option label="Elegir ..." value="">Elegir ...</option><option label="Carnet de Identidad" value="NationalId" selected="selected">Carnet de Identidad</option><option label="Pasaporte" value="Passport">Pasaporte</option></select>
       <label style={styles.label}>Rut del paciente</label>
-      <TextField
-        color={'primary'}
-        margin="normal"
-        fullWidth
-        id="rut"
-        label="Ingresa tu Rut"
-        name="documentNumber"
-        autoComplete="rut"
-        autoFocus
-        InputProps={{
-          endAdornment: (
-            <InputAdornment position="end">
-              <IconButton edge="end">
-              </IconButton>
-            </InputAdornment>
-          )
-        }}
-      />
+      <div id='inputDesktop'>
+        <TextField
+          color={'primary'}
+          margin="normal"
+          fullWidth
+          id="rut"
+          label="Ingresa tu Rut"
+          name="documentNumber"
+          autoComplete="rut"
+          autoFocus
+          InputProps={{
+            endAdornment: (
+              <InputAdornment position="end">
+                <IconButton edge="end">
+                </IconButton>
+              </InputAdornment>
+            )
+          }}
+        />
+      </div>
+      <div id="keyboard">
+        <MyComponent />
+      </div>
       <button style={styles.button}>CONTINUAR</button>
 
 

@@ -3,7 +3,7 @@ import Head from 'next/head'
 import type { NextPage } from 'next'
 /* import { ThemeProvider } from '@mui/material/styles'
 import theme from '../src/theme/themes' */
-//import '../styles/globals.css'
+import '../src/styles/globals.css'
 import  type { FC, ReactElement, ReactNode } from 'react'
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {

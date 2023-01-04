@@ -2066,6 +2066,11 @@ react-is@^18.2.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
+react-simple-keyboard@^3.5.2:
+  version "3.5.2"
+  resolved "https://registry.yarnpkg.com/react-simple-keyboard/-/react-simple-keyboard-3.5.2.tgz#39e0725fb972fe645f28451a33c8d8e6d10c42db"
+  integrity sha512-5W4JqivbgDgUgUaenxWzjTuLO70l08LiBb/whPKkk/eTKyKDDBTcDE6dApdo1fT1/wVjOgOSnUbpB4tMFfwXuw==
+
 react-transition-group@^4.4.5:
   version "4.4.5"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.4.5.tgz#e53d4e3f3344da8521489fbef8f2581d42becdd1"

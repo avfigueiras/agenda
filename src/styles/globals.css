@@ -90,3 +90,41 @@ body{
     transform: scale(1);
   }
 }
+.simple-keyboard.hg-theme-default.myTheme {
+  background-color: white;
+  font-family: "Nunito";
+  font-weight: 700;
+  color: #000000;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.simple-keyboard .material-symbols-rounded {
+  color: #000000;
+  font-weight: 700;
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+div.hg-button.hg-functionBtn.hg-button-bksp {
+  width: 20px;
+  background: #D8D8D8;
+  font-size: 21px;
+}
+.hg-theme-default .hg-button.hg-standardBtn {
+  background: #D8D8D8;
+  font-size: 21px;
+}
+#keyboard{
+  display: none;
+}
+@media screen and (max-width: 767px) and (min-width: 120px) {
+  #keyboard {
+    display: flex;
+  }
+  #inputDesktop{
+    display: none;
+  }
+}

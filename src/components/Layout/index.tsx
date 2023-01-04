@@ -18,26 +18,26 @@ export const VerifyPatientLayout: FC<Props> = props => {
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          textAlign:'center'
+          textAlign: 'center'
         }}
       >
-        <HeaderApp type="default"/>
-        <Box 
+        <HeaderApp type="default" />
+        <Box
           sx={{
             display: 'flex',
             flexDirection: 'column',
-            textAlign:'start',
-            marginTop:'30px',
-            paddingLeft:'350px'
+            textAlign: 'start',
+            marginTop: '30px',
+            paddingLeft: '350px'
           }}
         >
-          <Box 
-              sx={{
-            display: 'flex',
-            textAlign:'start',
-            marginTop:'30px',
-            paddingLeft:'500px'
-          }}
+          <Box
+            sx={{
+              display: 'flex',
+              textAlign: 'start',
+              marginTop: '30px',
+              paddingLeft: '500px'
+            }}
           >
           </Box>
           <Typography fontWeight={800} fontSize={24} color="#01635e">
