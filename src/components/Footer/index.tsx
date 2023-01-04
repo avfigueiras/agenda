@@ -42,7 +42,10 @@ export default function FooterApp() {
       >
         <Grid container>
           <Grid item xs >
-            <Box paddingLeft={4}>
+            <Box 
+            paddingLeft={4}
+            display="flex"
+            >
               <Image
                 src="/img/logo-redsalud-footer.svg"
                 alt="logo-red-salud"

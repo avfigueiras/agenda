@@ -5,6 +5,7 @@ import { ArrowBack, ErrorRounded } from '@mui/icons-material'
 import { Avatar, Box, Typography, Button, IconButton, InputAdornment, TextField } from '@mui/material'
 import { format } from 'rut.js'
 import { FormikHelpers, useFormik } from 'formik'
+import StepperApp from './components/Stepper'
 
 /* import SuccessMessageLoginApp from './SuccessMessage'
 import LoginForm from './forms/login' */
@@ -64,6 +65,7 @@ export default function VerifyPatientApp() {
   } as const;
   return (
     <>
+    <StepperApp actualStep={show ? 1 : 0}/>
       <Box
         sx={{
           display: 'flex',
