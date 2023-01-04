@@ -83,7 +83,7 @@ export default function VerifyPatientApp() {
         </div>
       </div>
       <label style={styles.label}>Documento de Identificación</label>
-      <select id="patientInfoDocType" style={styles.select}><option label="Elegir ..." value="">Elegir ...</option><option label="Carnet de Identidad" value="NationalId" selected="selected">Carnet de Identidad</option><option label="Pasaporte" value="Passport">Pasaporte</option></select>
+      <select id="patientInfoDocType" style={styles.select}><option label="Elegir ..." value="">Elegir ...</option><option label="Carnet de Identidad" value="NationalId" defaultValue="selected">Carnet de Identidad</option><option label="Pasaporte" value="Passport">Pasaporte</option></select>
       <label style={styles.label}>Rut del paciente</label>
       <div id='inputDesktop'>
         <TextField

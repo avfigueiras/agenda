@@ -32,6 +32,9 @@ const KeyboardWrapper: FunctionComponent<IProps> = ({
         "K 0 {bksp}"
         ]
     }}
+     display= {{
+        '{bksp}': `<span class="material-symbols-outlined">backspace</span>`,
+     }}
       onChange={onChange}
       onKeyPress={onKeyPress}
       onRender={() => console.log("Rendered")}

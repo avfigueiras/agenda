@@ -18,7 +18,8 @@ export const VerifyPatientLayout: FC<Props> = props => {
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          textAlign: 'center'
+          textAlign: 'center',
+          background: '#f2f2f2',
         }}
       >
         <HeaderApp type="default" />
@@ -28,7 +29,9 @@ export const VerifyPatientLayout: FC<Props> = props => {
             flexDirection: 'column',
             textAlign: 'start',
             marginTop: '30px',
-            paddingLeft: '350px'
+            //paddingLeft: '350px'
+            alignItems: 'center',
+            background: '#f2f2f2',
           }}
         >
           <Box
@@ -36,10 +39,11 @@ export const VerifyPatientLayout: FC<Props> = props => {
               display: 'flex',
               textAlign: 'start',
               marginTop: '30px',
-              paddingLeft: '500px'
+              //paddingLeft: '500px'
             }}
           >
           </Box>
+          <div id=''>
           <Typography fontWeight={800} fontSize={24} color="#01635e">
             Reserva de hora
           </Typography>
@@ -50,6 +54,7 @@ export const VerifyPatientLayout: FC<Props> = props => {
           >
             Paso 1: Identificar paciente
           </Typography>
+          </div>
         </Box>
         <Box
           sx={{

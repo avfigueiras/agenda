@@ -13,7 +13,7 @@ const MyComponent: FunctionComponent = () => {
     };
 
     return (
-        <div>
+        <div className="widthFill">
             <TextField
                 color={'primary'}
                 margin="normal"
@@ -33,7 +33,6 @@ const MyComponent: FunctionComponent = () => {
                     )
                 }}
             />
-
             <KeyboardWrapper keyboardRef={keyboard} onChange={setInput} />
         </div>
     );

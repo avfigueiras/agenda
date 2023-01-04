@@ -95,39 +95,43 @@ const HeaderApp: FC<Props> = props => {
           boxShadow: '1px 2px 7px rgba(0, 0, 0, 0.1);'
         }}
       >
-        <Box display="flex" alignItems="center">
-          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            {type === 'default' && (
-              <Image
-                src="/img/logo-redsalud.svg"
-                alt="Picture of the author"
-                width={176.49}
-                height={47.44}
-              />
-            )}
+        <div>
+          <Box display="flex" alignItems="center">
+            <Box sx={{ display: { xs: 'flex', md: 'flex' } }}>
+              {type === 'default' && (
+                <Image
+                  src="/img/logo-redsalud.svg"
+                  alt="Picture of the author"
+                  width={176.49}
+                  height={47.44}
+                />
+              )}
+            </Box>
           </Box>
-        </Box>
-        <Stack direction="row" gap={4} alignItems="center">
-          {type === 'default' && (
-            <>
-            <Typography color="#099" fontSize={14} fontWeight={600}>
-              Reserva hora
-            </Typography>
-            <Typography color="#099" fontSize={14} fontWeight={600}>
-              Consultar hora
-            </Typography>
-            <Typography color="#099" fontSize={14} fontWeight={600}>
-              Confirmar hora
-            </Typography>
-            <Typography color="#099" fontSize={14} fontWeight={600}>
-              Anular hora
-            </Typography>
-            <Typography color="#099" fontSize={14} fontWeight={600}>
-              Cambiar hora
-            </Typography>
-            </>
-          )}
-        </Stack>
+        </div>
+        <div id='navbar'>
+          <Stack direction="row" gap={4} alignItems="center">
+            {type === 'default' && (
+              <>
+              <Typography color="#099" fontSize={14} fontWeight={600}>
+                Reserva hora
+              </Typography>
+              <Typography color="#099" fontSize={14} fontWeight={600}>
+                Consultar hora
+              </Typography>
+              <Typography color="#099" fontSize={14} fontWeight={600}>
+                Confirmar hora
+              </Typography>
+              <Typography color="#099" fontSize={14} fontWeight={600}>
+                Anular hora
+              </Typography>
+              <Typography color="#099" fontSize={14} fontWeight={600}>
+                Cambiar hora
+              </Typography>
+              </>
+            )}
+          </Stack>
+        </div>
         {/*       {open && (
         <Notifications
           open={open}
