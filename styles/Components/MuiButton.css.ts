@@ -23,7 +23,8 @@ const MuiButtonCustom = {
         },
         ':disabled': {
           background: '#D5D5D5',
-          color: '#9E9E9D'
+          color: '#9E9E9D',
+          cursor:'not-allowed'
         }
       }
     },

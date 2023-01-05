@@ -1,5 +1,6 @@
-import theme from '../../theme/themes'
+
 import { SxProps, Theme } from '@mui/material/styles'
+import theme from '../../../theme/themes'
 
 const containerFooter: SxProps<Theme> = {
   height: 122,

@@ -44,21 +44,6 @@ export default function FooterApp() {
           alignItems="center"
           mx={8}
         >
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>{socialIcons}</Box>
-          <Stack direction="row" spacing={4} sx={containerIcons}>
-            <Stack direction="row" spacing={2}>
-              <Hotel />
-              <Typography color="#FFFFFF" fontSize={14}>
-                Urgencias
-              </Typography>
-            </Stack>
-            <Stack direction="row" spacing={2}>
-              <LocationOn />
-              <Typography color="#FFFFFF" fontSize={14}>
-                Ubicación
-              </Typography>
-            </Stack>
-          </Stack>
         </Grid>
       </Grid>
       <Grid

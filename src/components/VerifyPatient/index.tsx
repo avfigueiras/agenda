@@ -1,8 +1,5 @@
 import React, { useState } from 'react'
-
-import {  Box, Typography, Button } from '@mui/material'
-import StepperApp from './components/Stepper'
-import { BorderColor } from '@mui/icons-material'
+import {  Box } from '@mui/material'
 import VerifyPatientForm from './forms/verifyPatient'
 
 export default function VerifyPatientApp() {
@@ -10,12 +7,12 @@ export default function VerifyPatientApp() {
 
   return (
     <>
-      <StepperApp actualStep={show ? 1 : 0}/>
         <Box
           sx={{
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
+            border: '2px solid red'
           }}
         > 
           <VerifyPatientForm />
