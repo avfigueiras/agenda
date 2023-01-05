@@ -5,7 +5,7 @@ const containerFooter: SxProps<Theme> = {
   height: 122,
   width: '100%',
   [theme.breakpoints.down('md')]: {
-    height: 188,
+    height: 122,
     width: '100%',
   }
 }
@@ -22,7 +22,7 @@ const containerIcons: SxProps<Theme> = {
 const firstGrid: SxProps<Theme> = {
   background: '#004D4D',
   color: '#FFFFFF',
-  [theme.breakpoints.down('xl')]: {
+  [theme.breakpoints.down('md')]: {
     display: 'flex',
     justifyContent: 'center'
   }

@@ -6,7 +6,8 @@ import { Avatar, Box, Typography, Button, IconButton, InputAdornment, TextField 
 import { format } from 'rut.js'
 import { FormikHelpers, useFormik } from 'formik'
 import StepperApp from './components/Stepper'
-import MyComponent from '../keyboard/MyComponent'
+/* import MyComponent from '../keyboard/MyComponent' */
+import VerifyPatientForm from './forms/verifyPatient'
 
 /* import SuccessMessageLoginApp from './SuccessMessage'
 import LoginForm from './forms/login' */
@@ -61,17 +62,23 @@ export default function VerifyPatientApp() {
       color: '#747473',
       fontWeight: '300',
       margin: '0 0 10px',
+    },
+    stepper: {
+      top: '-36px',
+      position: 'relative',
     }
 
   } as const;
   return (
     <>
-      <StepperApp actualStep={show ? 1 : 0} />
+      <div id='stepper'>
+        <StepperApp actualStep={show ? 1 : 0}/>
+      </div>
       <Box
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'center'
+          alignItems: 'center',
         }}
       >
 
@@ -82,7 +89,7 @@ export default function VerifyPatientApp() {
           <p style={styles.p}>Complete los datos del <u><strong>Paciente</strong> que será atendido:</u></p>
         </div>
       </div>
-      <label style={styles.label}>Documento de Identificación</label>
+{/*       <label style={styles.label}>Documento de Identificación</label>
       <select id="patientInfoDocType" style={styles.select}><option label="Elegir ..." value="">Elegir ...</option><option label="Carnet de Identidad" value="NationalId" defaultValue="selected">Carnet de Identidad</option><option label="Pasaporte" value="Passport">Pasaporte</option></select>
       <label style={styles.label}>Rut del paciente</label>
       <div id='inputDesktop'>
@@ -104,11 +111,12 @@ export default function VerifyPatientApp() {
             )
           }}
         />
-      </div>
-      <div id="keyboard">
+      </div> */}
+      <VerifyPatientForm />
+{/*       <div id="keyboard">
         <MyComponent />
-      </div>
-      <button style={styles.button}>CONTINUAR</button>
+      </div> */}
+{/*       <button style={styles.button}>CONTINUAR</button> */}
 
 
       {/* <Button

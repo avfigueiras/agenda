@@ -239,6 +239,16 @@ div.hg-button.hg-functionBtn.hg-button-bksp {
   display: flex;
 }
 
+#mobileHidden{
+  display: flex;
+}
+.overflow{
+  overflow: visible;
+}
+#stepper{
+  top: -36px;
+  position: relative;
+}
 @media screen and (max-width: 767px) and (min-width: 120px) {
   #keyboard {
     display: flex;
@@ -252,5 +262,13 @@ div.hg-button.hg-functionBtn.hg-button-bksp {
   }
   #navbar{
     display: none;
+  }
+  #mobileHidden{
+    display: none;
+  }
+}
+@media screen and (min-width: 900px) {
+  #stepper{
+    top: -44px;
   }
 }

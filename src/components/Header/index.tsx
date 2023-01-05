@@ -81,7 +81,7 @@ const HeaderApp: FC<Props> = props => {
         sx={{
           height: '100%',
           maxHeight: {
-            xs: 79,
+            xs: 94,
             md: 94
           },
           p: {

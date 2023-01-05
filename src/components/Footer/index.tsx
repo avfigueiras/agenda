@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 // Styles
 import {
@@ -26,6 +26,18 @@ import {
 import { Box, Grid, Stack, Typography } from '@mui/material'
 
 export default function FooterApp() {
+  const [bottom,setBottom]=useState('0px')
+  useEffect(()=>{
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document?.body?.scrollTop > 20 || document?.documentElement?.scrollTop > 20) {
+            setBottom('-100px');
+          } else {
+          setBottom('0px');
+        }
+    }
+  },[])
 
   return (
 
@@ -42,7 +54,7 @@ export default function FooterApp() {
           lg={12}
           sx={{ background: '#009999' }}
         >
-          <div id="menuMobileFooter">
+          <div id="menuMobileFooter" style={{bottom:bottom}}>
             <div className='menuMobileTab'>
               <span className='material-symbols-rounded'>
                 help

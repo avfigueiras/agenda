@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import type { FC, ReactNode } from 'react'
 import PropTypes from 'prop-types'
 import { Card, Box, Typography } from '@mui/material'
@@ -11,6 +11,7 @@ interface Props {
 
 export const VerifyPatientLayout: FC<Props> = props => {
   const { children } = props
+  const [show, setShow] = useState(false)
 
   return (
     <>
@@ -43,7 +44,7 @@ export const VerifyPatientLayout: FC<Props> = props => {
             }}
           >
           </Box>
-          <div id=''>
+          <div>
           <Typography fontWeight={800} fontSize={24} color="#01635e">
             Reserva de hora
           </Typography>
@@ -65,10 +66,11 @@ export const VerifyPatientLayout: FC<Props> = props => {
         >
           <Box
             component="main"
-            sx={{ my: { md: 8, xs: 0 }, mx: 'auto', }}
-            maxWidth="md"
+            sx={{ my: { md: 8, xs: 8 }, mx: 'auto', }}
+
           >
             <Card
+            className="overflow"
               variant="outlined"
               sx={{
                 padding: {
