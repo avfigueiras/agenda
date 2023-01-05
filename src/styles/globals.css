@@ -249,6 +249,19 @@ div.hg-button.hg-functionBtn.hg-button-bksp {
   top: -36px;
   position: relative;
 }
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active{
+  color: #01635e;
+}
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed{
+  color: #01635e;
+}
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root{
+  color: #d8d8d8;
+}
+.css-117w1su-MuiStepIcon-text{
+  fill: #d8d8d8;
+}
+
 @media screen and (max-width: 767px) and (min-width: 120px) {
   #keyboard {
     display: flex;

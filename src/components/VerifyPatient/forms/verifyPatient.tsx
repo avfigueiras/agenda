@@ -168,8 +168,18 @@ const VerifyPatientForm: FC = () => {
     if (value === 'passport') {
       setLabel('Número de Pasaporte');
     }
-
-
+  }
+  const [helper, setHelper] = useState('Ingrese RUT del paciente.');
+  const handleChangeHelper = (event: React.ChangeEvent<{ value: unknown }>) => {
+    console.log('helper');
+    console.log(event.target.value as string);
+    const value = event.target.value as string;
+    if (value === 'rut') {
+      setLabel('Ingrese RUT del paciente.');
+    }
+    if (value === 'passport') {
+      setLabel('Indique número de pasaporte del paciente. Solo para extranjeros sin Cédula de Identidad.');
+    }
   }
 
   return (

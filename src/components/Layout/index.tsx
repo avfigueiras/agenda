@@ -29,7 +29,6 @@ export const VerifyPatientLayout: FC<Props> = props => {
             display: 'flex',
             flexDirection: 'column',
             textAlign: 'start',
-            marginTop: '30px',
             //paddingLeft: '350px'
             alignItems: 'center',
             background: '#f2f2f2',
